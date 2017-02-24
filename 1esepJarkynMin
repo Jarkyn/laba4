@@ -1,0 +1,10 @@
+<html>
+</html>
+<script>
+function a_min(a,b,c,d) {
+    var min = Math.min(a,b,c,d);
+    return min;
+}
+document.write
+(a_min(89,27,79,52));
+</script>
