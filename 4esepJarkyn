@@ -1,0 +1,22 @@
+<html>
+
+<script>
+function fibonacci(N){
+    if (N <= 1)  {
+      return N;
+    } else {
+      return fibonacci(N-1) + fibonacci(N-2);
+    }}
+ var N = 6;
+  var f1 = 1, f2 = 1, fib = 1;
+  for (var i = 3; i <= N; i++) {
+    fib = f1 + f2;
+    f1 = f2;
+    f2 = fib;
+}
+	for (var i = 1; i <= N; i++) {
+document.write(i , ": ", fibonacci(i),"<br>");
+}
+document.write("<br> Output = ",fib);
+</script>
+</html>
